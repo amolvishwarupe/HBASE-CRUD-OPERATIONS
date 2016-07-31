@@ -1,0 +1,36 @@
+Hbase Crud operations 
+
+
+hbase shell
+ 
+version
+list
+create 'customer','address','order'
+list
+
+put 'customer','john','address:city','Boston'
+put 'customer','john','address:state','Mashitushes'
+put 'customer','john','address:street','street1'
+put 'customer','john','order:number','ORD-15'
+put 'customer','john','order:amount','15'
+
+
+
+
+put 'customer','Finch','address:city','Newyork'
+put 'customer','Finch','address:state','Newyork'
+put 'customer','Finch','order:number','ORD-16'
+put 'customer','Finch','order:amount','15'
+
+get 'customer','john'
+ 
+
+
+get 'customer','john','address'
+get 'customer','john','address:city'
+
+
+
+scan 'customer'
+
+
